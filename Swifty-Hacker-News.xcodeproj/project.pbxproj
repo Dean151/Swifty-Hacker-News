@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E975FE301FDE984500C6F640 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E975FE2F1FDE984500C6F640 /* Alamofire.framework */; };
 		E9D94AE81FDDCA4600C2A284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */; };
-		E9D94AEA1FDDCA4600C2A284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE91FDDCA4600C2A284 /* ViewController.swift */; };
+		E9D94AEA1FDDCA4600C2A284 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE91FDDCA4600C2A284 /* NewsListViewController.swift */; };
 		E9D94AED1FDDCA4600C2A284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AEB1FDDCA4600C2A284 /* Main.storyboard */; };
 		E9D94AF01FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AEE1FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld */; };
 		E9D94AF21FDDCA4600C2A284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		E975FE2F1FDE984500C6F640 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E9D94AE41FDDCA4600C2A284 /* Swifty-Hacker-News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty-Hacker-News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9D94AE91FDDCA4600C2A284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9D94AE91FDDCA4600C2A284 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		E9D94AEC1FDDCA4600C2A284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9D94AEF1FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swifty_Hacker_News.xcdatamodel; sourceTree = "<group>"; };
 		E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		E9D94AFC1FDDCEF900C2A284 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9D94AE91FDDCA4600C2A284 /* ViewController.swift */,
+				E9D94AE91FDDCA4600C2A284 /* NewsListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D94AEA1FDDCA4600C2A284 /* ViewController.swift in Sources */,
+				E9D94AEA1FDDCA4600C2A284 /* NewsListViewController.swift in Sources */,
 				E9D94AE81FDDCA4600C2A284 /* AppDelegate.swift in Sources */,
 				E9D94AF01FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld in Sources */,
 				E9D94B001FDDCF4E00C2A284 /* HackerNewsApi.swift in Sources */,
