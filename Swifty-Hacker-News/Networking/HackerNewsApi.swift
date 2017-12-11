@@ -11,7 +11,7 @@ import Foundation
 
 class HackerNewsApi {
     
-    let baseUrl = URL("https://hacker-news.firebaseio.com/v0/")!
+    let baseUrl = URL(string: "https://hacker-news.firebaseio.com/v0/")!
     
     enum Ranking: String {
         case topstories

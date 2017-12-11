@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E975FE301FDE984500C6F640 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E975FE2F1FDE984500C6F640 /* Alamofire.framework */; };
 		E9D94AE81FDDCA4600C2A284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */; };
 		E9D94AEA1FDDCA4600C2A284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE91FDDCA4600C2A284 /* ViewController.swift */; };
 		E9D94AED1FDDCA4600C2A284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AEB1FDDCA4600C2A284 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E975FE2F1FDE984500C6F640 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E9D94AE41FDDCA4600C2A284 /* Swifty-Hacker-News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty-Hacker-News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D94AE91FDDCA4600C2A284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E975FE301FDE984500C6F640 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E975FE2E1FDE984500C6F640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E975FE2F1FDE984500C6F640 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9D94ADB1FDDCA4600C2A284 = {
 			isa = PBXGroup;
 			children = (
 				E9D94AE61FDDCA4600C2A284 /* Swifty-Hacker-News */,
 				E9D94AE51FDDCA4600C2A284 /* Products */,
+				E975FE2E1FDE984500C6F640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +116,7 @@
 				E9D94AE01FDDCA4600C2A284 /* Sources */,
 				E9D94AE11FDDCA4600C2A284 /* Frameworks */,
 				E9D94AE21FDDCA4600C2A284 /* Resources */,
+				E975FE2D1FDE96EF00C6F640 /* Carthage copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +173,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E975FE2D1FDE96EF00C6F640 /* Carthage copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Carthage copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9D94AE01FDDCA4600C2A284 /* Sources */ = {
@@ -307,7 +338,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6EL5V5QVB4;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swifty-Hacker-News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -323,7 +358,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6EL5V5QVB4;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swifty-Hacker-News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
