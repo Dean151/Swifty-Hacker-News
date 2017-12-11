@@ -9,6 +9,8 @@
 import UIKit
 
 class NewsListViewController: UITableViewController {
+    
+    let api = HackerNewsApi()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,11 @@ class NewsListViewController: UITableViewController {
         
         // Set the title
         self.navigationItem.title = "Hacker News"
+        
+        // Update data
+        api.retreiveStoriesIds(ranking: .topstories) { ids, error in
+            print(ids)
+        }
     }
 
     override func didReceiveMemoryWarning() {

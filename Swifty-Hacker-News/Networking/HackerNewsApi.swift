@@ -8,9 +8,15 @@
 
 import Alamofire
 import Foundation
+import UIKit
 
 class HackerNewsApi {
     
+    var appDelegate: AppDelegate! {
+        return UIApplication.shared.delegate as? AppDelegate
+    }
+    
+    let session = SessionManager()
     let baseUrl = URL(string: "https://hacker-news.firebaseio.com/v0/")!
     
     enum Ranking: String {
@@ -19,4 +25,15 @@ class HackerNewsApi {
         case beststories
     }
     
+    func retreiveStoriesIds(ranking: Ranking, completion: @escaping ([Int]?, Error?) -> Void) {
+        let url = baseUrl.appendingPathComponent("\(ranking.rawValue).json")
+        session.request(url).validate().responseJSON { (response) in
+            switch response.result {
+            case .success(let array):
+                completion(array as? [Int], nil)
+            case .failure(let error):
+                completion(nil, error)
+            }
+        }
+    }
 }
