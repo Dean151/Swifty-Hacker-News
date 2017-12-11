@@ -13,6 +13,9 @@ class NewsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Set the title
+        self.navigationItem.title = "Hacker News"
     }
 
     override func didReceiveMemoryWarning() {
