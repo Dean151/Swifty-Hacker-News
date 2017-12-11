@@ -13,6 +13,7 @@
 		E9D94AF01FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AEE1FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld */; };
 		E9D94AF21FDDCA4600C2A284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */; };
 		E9D94AF51FDDCA4600C2A284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AF31FDDCA4600C2A284 /* LaunchScreen.storyboard */; };
+		E9D94B001FDDCF4E00C2A284 /* HackerNewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AFF1FDDCF4E00C2A284 /* HackerNewsApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D94AF41FDDCA4600C2A284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9D94AF61FDDCA4600C2A284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D94AFF1FDDCF4E00C2A284 /* HackerNewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		E9D94AE61FDDCA4600C2A284 /* Swifty-Hacker-News */ = {
 			isa = PBXGroup;
 			children = (
+				E9D94AFD1FDDCF0800C2A284 /* UI */,
+				E9D94AFC1FDDCEF900C2A284 /* Controllers */,
+				E9D94AFE1FDDCF2600C2A284 /* Networking */,
 				E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */,
-				E9D94AE91FDDCA4600C2A284 /* ViewController.swift */,
-				E9D94AEB1FDDCA4600C2A284 /* Main.storyboard */,
-				E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */,
-				E9D94AF31FDDCA4600C2A284 /* LaunchScreen.storyboard */,
 				E9D94AF61FDDCA4600C2A284 /* Info.plist */,
 				E9D94AEE1FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld */,
 			);
 			path = "Swifty-Hacker-News";
+			sourceTree = "<group>";
+		};
+		E9D94AFC1FDDCEF900C2A284 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9D94AE91FDDCA4600C2A284 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E9D94AFD1FDDCF0800C2A284 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E9D94AF11FDDCA4600C2A284 /* Assets.xcassets */,
+				E9D94AF31FDDCA4600C2A284 /* LaunchScreen.storyboard */,
+				E9D94AEB1FDDCA4600C2A284 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E9D94AFE1FDDCF2600C2A284 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9D94AFF1FDDCF4E00C2A284 /* HackerNewsApi.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +169,7 @@
 				E9D94AEA1FDDCA4600C2A284 /* ViewController.swift in Sources */,
 				E9D94AE81FDDCA4600C2A284 /* AppDelegate.swift in Sources */,
 				E9D94AF01FDDCA4600C2A284 /* Swifty_Hacker_News.xcdatamodeld in Sources */,
+				E9D94B001FDDCF4E00C2A284 /* HackerNewsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
