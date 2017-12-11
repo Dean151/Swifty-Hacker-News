@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="385" y="-223"/>
         </scene>
-        <!--Split View Controller-->
+        <!--News Split View Controller-->
         <scene sceneID="nu2-K8-kpd">
             <objects>
-                <splitViewController id="lsS-If-8WO" sceneMemberID="viewController">
+                <splitViewController id="lsS-If-8WO" customClass="NewsSplitViewController" customModule="Swifty_Hacker_News" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="vZH-p6-FgL" kind="relationship" relationship="masterViewController" id="3g5-hY-GjN"/>
                         <segue destination="FpP-xm-q1B" kind="relationship" relationship="detailViewController" id="Bgy-6p-K5D"/>
