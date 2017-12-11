@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E975FE301FDE984500C6F640 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E975FE2F1FDE984500C6F640 /* Alamofire.framework */; };
+		E975FE341FDE9A8900C6F640 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E975FE331FDE9A8900C6F640 /* Chameleon.framework */; };
 		E9D94AE81FDDCA4600C2A284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */; };
 		E9D94AEA1FDDCA4600C2A284 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D94AE91FDDCA4600C2A284 /* NewsListViewController.swift */; };
 		E9D94AED1FDDCA4600C2A284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D94AEB1FDDCA4600C2A284 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E975FE2F1FDE984500C6F640 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E975FE331FDE9A8900C6F640 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		E9D94AE41FDDCA4600C2A284 /* Swifty-Hacker-News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty-Hacker-News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D94AE71FDDCA4600C2A284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D94AE91FDDCA4600C2A284 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E975FE301FDE984500C6F640 /* Alamofire.framework in Frameworks */,
+				E975FE341FDE9A8900C6F640 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		E975FE2E1FDE984500C6F640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E975FE331FDE9A8900C6F640 /* Chameleon.framework */,
 				E975FE2F1FDE984500C6F640 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -182,6 +186,7 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/Carthage/Build/iOS/Alamofire.framework",
+				"$(PROJECT_DIR)/Carthage/Build/iOS/Chameleon.framework",
 			);
 			name = "Carthage copy Frameworks";
 			outputPaths = (
